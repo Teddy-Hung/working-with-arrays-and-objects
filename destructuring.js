@@ -55,7 +55,7 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-function totalPopulation(obj){
+let totalPopulation = obj =>{
   const {utah: UT, california: CA, texas: TX, arizona: AZ} = obj
   return UT+CA+TX+AZ
 }
@@ -74,9 +74,7 @@ function totalPopulation(obj){
 function ingredients(obj){
   const {carb, fat, protein} = obj
   const arr = []
-  arr.push(carb)
-  arr.push(fat)
-  arr.push(protein)
+  arr.push(carb, fat, protein)
   return arr
 }
 
